@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="youTube.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+</head>
+<body class="sidebar-hidden">
+    <div class="container">
+        <header>
+            <!-- navbar -->
+            <nav class="navbar">
+                <!-- nav left -->
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">menu</button>
+                    <a href="#" class="nav-logo">
+                        <img src="unsplash/image1.jpg" alt="logo-image" class="logo-image">
+                        <h2 class="logo-text">iTube</h2>
+                    </a>
+                </div>
+
+                <!-- nav center -->
+                <div class="nav-section nav-center">
+                    <form action="#" class="search-form">
+                        <input type="search" placeholder="Search" required class="search-input">
+                        <button class="nav-button search-button">Search</button>
+                    </form>
+                    <button class="nav-button mic-button">mic</button>
+                </div>
+
+                <!-- nav right -->
+                <div class="nav-section nav-right">
+                    <button class="nav-button search-button">Search</button>
+                    <button class="nav-button theme-button">Theme</button>
+                    <img src="unsplash/image2.jpg" alt="user-image" class="user-image">
+                </div>
+            </nav>
+        </header>
+
+        <!-- main-layout -->
+        <main class="main-layout">
+            <div class="screen-overlay"></div>
+
+            
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">menu</button>
+                    <a href="#" class="nav-logo">
+                        <img src="unsplash/image1.jpg" alt="logo-image" class="logo-image">
+                        <h2 class="logo-text">iTube</h2>
+                    </a>
+                </div>
+
+                <div class="link-container">
+                    <!-- 1 -->
+                    <div class="link-section">
+                        <a href="#" class="link-item">Home</a>
+                        <a href="#" class="link-item">Shorts</a>
+                        <a href="#" class="link-item">Subscription</a>
+                    </div>
+                    <div class="section-separator"></div>
+    
+                    <!-- 2 -->
+                    <div class="link-section">
+                        <h2 class="section-title">You</h2>
+                        <a href="#" class="link-item">Your channel</a>
+                        <a href="#" class="link-item">History</a>
+                        <a href="#" class="link-item">Watch later</a>
+                    </div>
+                    <div class="section-separator"></div>
+    
+                    <!-- 3 -->
+                    <div class="link-section">
+                        <h2 class="section-title">Explore</h2>
+                        <a href="#" class="link-item">Trending</a>
+                        <a href="#" class="link-item">Music</a>
+                        <a href="#" class="link-item">Gaming</a>
+                        <a href="#" class="link-item">Sports</a>
+                    </div>
+                    <div class="section-separator"></div>
+    
+                    <!-- 4 -->
+                    <div class="link-section">
+                        <h2 class="section-title">More from iTube</h2>
+                        <a href="#" class="link-item">iTube Plus</a>
+                        <a href="#" class="link-item">iTube Music</a>
+                        <a href="#" class="link-item">iTube Kids</a>
+                    </div>
+                    <div class="section-separator"></div>
+    
+                    <!-- 5 -->
+                    <div class="link-section">
+                        <a href="#" class="link-item">Settings</a>
+                        <a href="#" class="link-item">Report</a>
+                        <a href="#" class="link-item">Help</a>
+                        <a href="#" class="link-item">Feedback</a>
+                    </div>
+                    <div class="section-separator"></div>
+    
+                </div>
+            </aside>
+    
+            <!-- content-wrapper -->
+             <div class="content-wrapper">
+                <div class="category-list">
+                    <button class="category-button active">All</button>
+                    <button class="category-button">Java</button>
+                    <button class="category-button">MongoDB</button>
+                    <button class="category-button">Express.js</button>
+                    <button class="category-button">Reach</button>
+                    <button class="category-button">Node.js</button>
+                    <button class="category-button">HTML</button>
+                    <button class="category-button">CSS</button>
+                    <button class="category-button">JavaScript</button>
+                    <button class="category-button">Github</button>
+                    <button class="category-button">Python</button>
+                    <button class="category-button">Kotlin</button>
+                    <button class="category-button">Android</button>
+                    <button class="category-button">Excel</button>
+                    <button class="category-button">TypeScript</button>
+                    <button class="category-button">Web design</button>
+                    <button class="category-button">Data analysis</button>
+                    <button class="category-button">Tailwind</button>
+                    <button class="category-button">Gaming</button>
+                    <button class="category-button">Music</button>
+                    <button class="category-button">Website</button>
+                    <button class="category-button">Movies</button>
+                    <button class="category-button">Trending</button>
+                    <button class="category-button">SQL</button>
+                    <button class="category-button">MySQL</button>
+                </div>
+
+                <div class="video-list">
+                    
+                    <!-- 1 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image1.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 2 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image2.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 3 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image3.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 4 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image4.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 5 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image5.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                    <!-- 6 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image6.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                    <!-- 7 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image7.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 8 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image8.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 9 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image9.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                    <!-- 10 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image10.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 11 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image11.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 12 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image12.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 13 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image13.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 14 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image14.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 15 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image15.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- 16 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image16.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                    <!-- 17 -->
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="unsplash/image17.jpg" alt="" class="thumbnail">
+                            <p class="duration">10:07</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="unsplash/image1.jpg" alt="channel logo" class="icon">
+                            <div class="video-details">
+                                <h2 class="title">something something meri jaan karle humse ek baar pyaar ki mithi baatein do char oh soniye</h2>
+                                <p class="channel-name">PhotographerSunil</p>
+                                <p class="views">27k Views * 4 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+             </div>
+        </main>
+
+    </div>
+
+    <script src="youTube.js"></script>
+</body>
+</html> 

@@ -1,0 +1,313 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --light-white-color: #f0f0f0;
+    --light-grey-color: #e5e5e5;
+    --border-color: #d4d4d4;
+    --primary-color: #3b82f6;
+    --secondary-color: #404040;
+    --overlay-dark-color: rgba(0,0,0,0.6);
+}
+
+body.dark-mode{
+    --white-color: #171717;
+    --black-color: #d4d4d4;
+    --light-white-color: #333;
+    --light-grey-color: #404040;
+    --border-color: #737373;
+    --secondary-color: #d4d4d4;
+}
+
+body{
+    background-color: var(--white-color);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+header, .category-list{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--white-color);
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    /* background: dodgerblue; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+/* target start */
+
+.container :where(.nav-section, .nav-logo, .search-form){
+    display: flex;
+    align-items: center;
+}
+
+.container .nav-section{
+    gap: 1rem;
+}
+
+.container :where(.logo-image, .user-image){
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.container .nav-button{
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 0.7rem;
+    background-color: none;
+}
+
+.container .nav-button:hover{
+    background: var(--light-grey-color);
+}
+
+.container .nav-logo{
+    text-decoration: none;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .nav-logo .logo-text{
+    font-size: 1.35rem;
+    color: var(--black-color)
+}
+
+/* target end */
+
+.navbar .nav-center{
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar .search-form{
+    max-width: 550px;
+    flex: 1;
+    height: 40px;
+}
+
+.navbar .search-form .search-input{
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    outline: none;
+    font-size: 1rem;
+    color: var(--black-color);
+    background: var(--white-color);
+    border-radius: 3.1rem 0 0 3.1rem;
+    border: 1px solid var(--border-color);
+}
+
+.navbar .search-form .search-input:focus{
+    border-color: var(--primary-color);
+}
+
+.navbar .search-form .search-button{
+    width: auto;
+    border-radius: 0 3.1rem 3.1rem 0;
+    padding: 0 1rem;
+    border: 1px solid var(--border-color);
+    border-left: 0;
+}
+
+.navbar .nav-right .search-button{
+    display: none;
+}
+
+/* main - layout */
+.main-layout{
+    display: flex;
+    overflow-y: auto;
+    scrollbar-color: #a6a6a6 transparent;
+}
+
+.main-layout .content-wrapper{
+    padding: 0 0.75rem;
+    overflow-x: hidden;
+    width: 100%;
+    /* background-color: #fad15f; */
+}
+
+.content-wrapper .category-list{
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.75rem 0 0.75rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.category-list .category-button{
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--black-color);
+    background-color: var(--light-grey-color);
+}
+
+.category-list .category-button.active{
+    background: var(--black-color);
+    color: var(--white-color);
+    pointer-events: none;
+}
+
+.category-list .category-button:hover{
+    background: var(--border-color);
+}
+
+/* video card */
+.video-list{
+    display: grid;
+    gap: 1rem;
+    padding: 1.25rem 0 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.video-list .video-card{
+    text-decoration: none;
+}
+
+.video-list .video-card .video-info{
+    display: flex;
+    /* background-color: aqua; */
+    gap: 0.7rem;
+    padding: 0.7rem 0.5rem;
+}
+
+.video-list .video-card .thumbnail-container{
+    position: relative;
+}
+
+.video-card .thumbnail{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.5rem;
+}
+
+.video-list .video-card .duration{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    color: white;
+    font-size: 0.875rem;
+    padding: 0 0.3rem;
+    border-radius: 0.3rem;
+    background-color: var(--overlay-dark-color);
+}
+
+.video-card .icon{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;;
+}
+
+.video-list .video-card .title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black-color);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.video-list .video-card .title:hover{
+    color: var(--primary-color);
+}
+
+.video-list .video-card p{
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+}
+
+.video-list .video-card .channel-name{
+    margin: 0.25rem 0 0.15rem;
+}
+
+/* sidebar */
+.main-layout .sidebar{
+    width: 280px;
+    padding: 0 0.7rem 0;
+    background-color: var(--white-color);
+}
+
+body.sidebar-hidden .main-layout .sidebar{
+    width: 0;
+    padding: 0;
+}
+
+.main-layout .sidebar .nav-left{
+    display: none;
+    padding: 0.5rem 0.3rem;
+}
+
+.sidebar .link-container{
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding: 1rem 0 2rem;
+    height: calc(100vh - 60px);
+    scrollbar-color: transparent transparent;
+}
+
+.sidebar .link-container:hover{
+    scrollbar-color: #a6a6a6 transparent;
+}
+
+.sidebar .link-section .link-item{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* border: 1px solid black; */
+    padding: 0.37rem 0.75rem;
+    margin-bottom: 0.25rem;
+    color: var(--black-color);
+    border-radius: 0.5rem;
+    font-size: 0.938rem;
+    white-space: nowrap;
+}
+
+.sidebar .link-section .link-item:hover{
+    background: var(--light-grey-color);
+}
+
+.sidebar .link-section .section-title{
+    font-size: 0.938rem;
+    font-weight: 600;
+    color: var(--black-color);
+    margin: 1rem 0 0.5rem 0.5rem;
+}
+
+.sidebar .section-separator{
+    height: 1px;
+    overflow-x: hidden;
+    margin: 0.625rem 0;
+    background: var(--light-grey-color);
+}
